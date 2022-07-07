@@ -5,7 +5,7 @@ const config = {
 	plugins: [sveltekit()],
 	root: 'src',
 	build: {
-		outDir: './dist'
+		outDir: '.svelte-kit/cloudflare'
 	}
 };
 

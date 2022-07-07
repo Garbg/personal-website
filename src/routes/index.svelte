@@ -1,11 +1,12 @@
 <script>
 	import { onMount } from 'svelte';
-
 	const images = ['I built this site in 5 minutes', 'This site is made with svelte and tailwind'];
 	let imagenum = Math.floor(Math.random() * 2);
 	import '../app.css';
 	let darkmode = 'true';
 	onMount(() => {
+		const imgUrl = new URL('/src/images/user-trash.svg', import.meta.url).href;
+		document.getElementById('trash').src = imgUrl;
 		var allElements = document.getElementsByTagName('*');
 		// @ts-ignore
 		for (let element of allElements) {

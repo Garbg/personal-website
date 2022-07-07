@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+p {
+	font-family: 'DM Sans', sans-serif;
+}
+
+main,
+#gridthing {
+	min-height: 100vh;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+img {
+	max-height: 50vh;
+}
+
+* {
+	transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 300ms;
+	opacity: 0;
+}
+
+.dark-toggle {
+	position: absolute;
+	color: white;
+	z-index: 99999999999999999999999999999999999999999999;
+	top: 1rem;
+	left: calc(100% - 3rem);
+	cursor: pointer;
+}
+
+#trash {
+	height: 25vh;
+	max-height: 25vh;
+}

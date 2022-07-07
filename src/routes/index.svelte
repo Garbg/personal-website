@@ -5,8 +5,6 @@
 	import '../app.css';
 	let darkmode = 'true';
 	onMount(() => {
-		const imgUrl = new URL('/src/images/user-trash.svg', import.meta.url).href;
-		document.getElementById('trash').src = imgUrl;
 		var allElements = document.getElementsByTagName('*');
 		// @ts-ignore
 		for (let element of allElements) {
@@ -46,7 +44,7 @@
 			<p class="text-black text-xl dark:text-white">Frontend web developer</p>
 		</div>
 		<div class="bg-primary h-full flex justify-center align-items-center flex-col">
-			<img id="trash" src="/src/images/user-trash.svg" alt="Trash can" />
+			<img id="trash" src="/trashCan.svg" alt="Trash can" />
 		</div>
 	</div>
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="dark-toggle" on:click={darkToggle} height="2rem" style="fill: white;"

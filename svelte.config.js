@@ -1,6 +1,5 @@
 import adapter from '@sveltejs/adapter-cloudflare';
 import preprocess from 'svelte-preprocess';
-import { defineConfig, searchForWorkspaceRoot } from 'vite'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -13,7 +12,7 @@ const config = {
 	],
 
 	kit: {
-		
+		adapter: adapter()
 	},
 };
 

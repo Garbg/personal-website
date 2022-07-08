@@ -1,7 +1,5 @@
 <script>
 	import { onMount } from 'svelte';
-	const images = ['I built this site in 5 minutes', 'This site is made with svelte and tailwind'];
-	let imagenum = Math.floor(Math.random() * 2);
 	import '../app.css';
 	let darkmode = 'true';
 	onMount(() => {
@@ -44,7 +42,7 @@
 			<p class="text-black text-xl dark:text-white">Frontend web developer</p>
 		</div>
 		<div class="bg-primary h-full flex justify-center align-items-center flex-col">
-			<img id="trash" src="/trashCan.svg" alt="Trash can" />
+			<img id="trash" src="/images/trashCan.svg" alt="Trash can" />
 		</div>
 	</div>
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="dark-toggle" on:click={darkToggle} height="2rem" style="fill: white;"

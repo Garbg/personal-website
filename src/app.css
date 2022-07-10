@@ -38,6 +38,13 @@ img {
 }
 
 #trash {
-	height: 40vh;
-	max-height: 40vh;
+	height: 20rem;
+	max-height: 20rem;
 }
+
+@media screen and (max-width: 40rem) {
+	#trash {
+		height: 10rem;
+		max-height: 10rem;
+	}
+  }

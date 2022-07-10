@@ -1,37 +1,7 @@
-<script>
-	import { onMount } from 'svelte';
-	import '../app.css';
-	let darkmode = 'true';
-	onMount(() => {
-		var allElements = document.getElementsByTagName('*');
-		// @ts-ignore
-		for (let element of allElements) {
-			element.style.opacity = 1;
-		}
-		if (window.localStorage.getItem('darkmode') === null) {
-			window.localStorage.setItem('darkmode', 'true');
-			document.documentElement.classList.add('dark');
-		} else {
-			if (window.localStorage.getItem('darkmode') === 'true') {
-				document.documentElement.classList.add('dark');
-			}
-			console.log(window.localStorage.getItem('darkmode'));
-		}
-	});
-
-	function darkToggle() {
-		if (window.localStorage.getItem('darkmode') === 'true') {
-			window.localStorage.setItem('darkmode', 'false');
-			document.documentElement.classList.remove('dark');
-		} else if (window.localStorage.getItem('darkmode') === 'false') {
-			window.localStorage.setItem('darkmode', 'true');
-			document.documentElement.classList.add('dark');
-		}
-	}
-</script>
+<script src="../app.ts" lang="ts"></script>
 
 <title>My website</title>
-<link rel="icon" href="/src/images/user-trash.svg" type="image/svg+xml" />
+<link rel="icon" href="trashCan.svg" type="image/svg+xml" />
 
 <slot />
 <main class="bg-white dark:bg-slate-800">

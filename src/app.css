@@ -47,4 +47,15 @@ img {
 		height: 10rem;
 		max-height: 10rem;
 	}
-  }
+}
+
+::-moz-selection {
+	/* Code for Firefox */
+	color: white;
+	background-color: black;
+}
+
+::selection {
+	color: white;
+	background: black;
+}

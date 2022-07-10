@@ -14,7 +14,6 @@ onMount(() => {
 		if (window.localStorage.getItem('darkmode') === 'true') {
 			document.documentElement.classList.add('dark');
 		}
-		console.log(window.localStorage.getItem('darkmode'));
 	}
 });
 

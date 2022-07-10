@@ -3,8 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
-h1,
-p {
+:root {
+	--imgheight: 100px;
+}
+h1, p {
 	font-family: 'DM Sans', sans-serif;
 }
 
@@ -22,6 +24,7 @@ img {
 }
 
 * {
+	font-family: 'DM Sans', sans-serif;
 	transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 300ms;
@@ -49,4 +52,28 @@ img {
 	}
 }
 
+#text-thingy {
+	width: 400px;
+	height: 200px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+}
 
+#flower {
+	height: var(--imgheight);
+	position: relative;
+	z-index: 99999999;
+	top: calc(var(--imgheight) / 2);
+}
+
+#info-container {
+	width: 400px;
+}
+
+#fw-container {
+	width: 100%;
+}
+
+#info-container {
+	margin-inline: auto;
+}

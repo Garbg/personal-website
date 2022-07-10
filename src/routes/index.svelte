@@ -4,7 +4,7 @@
 <link rel="icon" href="trashCan.svg" type="image/svg+xml" />
 
 <slot />
-<main class="bg-white dark:bg-slate-800">
+<main class="bg-white dark:bg-slate-800 selection:text-white selection:bg-black dark:selection:text-black dark:selection:bg-white">
 	<div id="gridthing" class="grid grid-cols-2 dark:bg-slate-800">
 		<script src="https://kit.fontawesome.com/b56f87a59a.js" crossorigin="anonymous"></script>
 		<div class="h-full flex justify-center align-items-center flex-col transition-colors duration-300">

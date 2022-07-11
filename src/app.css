@@ -78,3 +78,7 @@ img {
 #info-container {
 	margin-inline: auto;
 }
+
+main {
+	padding-bottom: 1px;
+}

@@ -6,7 +6,8 @@
 :root {
 	--imgheight: 100px;
 }
-h1, p {
+h1,
+p {
 	font-family: 'DM Sans', sans-serif;
 }
 

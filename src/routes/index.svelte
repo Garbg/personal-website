@@ -1,4 +1,4 @@
-<script src="../app.ts" lang="ts"></script>
+<script src="../ugly.ts" lang="ts"></script>
 
 <title>My website</title>
 <link rel="icon" href="trashCan.svg" type="image/svg+xml" />
@@ -18,7 +18,7 @@
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="dark-toggle" on:click={darkToggle} height="2rem" style="fill: white;"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z" /></svg>
 	<div id="fw-container" class="bg-white dark:bg-slate-800 mb-5">
 		<div id="info-container">
-			<img id="flower" class="rounded-full mx-auto" src="https://avatars.githubusercontent.com/u/83542885?v=4" alt="Picture" />
+			<img id="pfp" class="rounded-full mx-auto" width="100px" height="100px" src="pfp.webp" alt="Picture" />
 			<div id="text-thingy" class="bg-white dark:bg-slate-800 text-center">
 				<div id="moretextthing" class="bg-white dark:bg-slate-800" style="position: relative; top: calc(var(--imgheight) / 2);">
 					<h1 class="text-2xl text-black dark:text-white">Garbg</h1>

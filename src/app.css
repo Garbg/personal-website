@@ -60,7 +60,7 @@ img {
 	border-radius: 10px;
 }
 
-#flower {
+#pfp {
 	height: var(--imgheight);
 	position: relative;
 	z-index: 99999999;
